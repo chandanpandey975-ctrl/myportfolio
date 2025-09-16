@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Matrix - ChandanFlix</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fchandanfli7226back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background bg-opacity-95 backdrop-blur-sm border-b border-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage_dashboard.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">ChandanFlix</span>
+                    </a>
+                </div>
+
+                <!-- Main Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_dashboard.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about_series.html" class="text-text-secondary hover:text-primary transition-colors duration-300">About Series</a>
+                    <a href="projects_showcase.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="skills_matrix.html" class="text-text-primary hover:text-primary transition-colors duration-300 font-medium">Skills</a>
+                    <a href="contact_studio.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Contact</a>
+                    <a href="resume_downloads.html" class="text-text-secondary hover:text-primary transition-colors duration-300">Resume</a>
+                </div>
+
+                <!-- Search and Profile -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" id="skillSearch" placeholder="Search skills, technologies..." class="bg-secondary border border-opacity-10 border-white text-text-primary px-4 py-2 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                        <svg class="absolute right-3 top-2.5 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <!-- Search Suggestions -->
+                        <div id="searchSuggestions" class="absolute top-full left-0 right-0 bg-secondary rounded-lg mt-1 shadow-dramatic hidden z-50">
+                            <div class="p-2 space-y-1">
+                                <div class="px-3 py-2 hover:bg-surface rounded cursor-pointer text-sm">React.js</div>
+                                <div class="px-3 py-2 hover:bg-surface rounded cursor-pointer text-sm">Node.js</div>
+                                <div class="px-3 py-2 hover:bg-surface rounded cursor-pointer text-sm">TypeScript</div>
+                                <div class="px-3 py-2 hover:bg-surface rounded cursor-pointer text-sm">Python</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                        <span class="text-white font-semibold text-sm">CP</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-primary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center px-4 py-2 bg-primary bg-opacity-20 rounded-full border border-primary border-opacity-30 mb-6">
+                    <span class="text-primary font-medium">🎯 Skills Library</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    <span class="block text-text-primary">Technical</span>
+                    <span class="block text-gradient">Superpowers</span>
+                </h1>
+                
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed mb-8">
+                    Explore my technical arsenal organized like your favorite streaming genres. 
+                    Each skill comes with proficiency ratings, real-world applications, and interactive demonstrations.
+                </p>
+
+                <!-- Quick Stats -->
+                <div class="flex justify-center items-center space-x-8 mb-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">25+</div>
+                        <div class="text-sm text-text-secondary">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success">5+</div>
+                        <div class="text-sm text-text-secondary">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-warning">15+</div>
+                        <div class="text-sm text-text-secondary">Certifications</div>
+                    </div>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="filter-tab active px-6 py-2 bg-primary text-white rounded-lg font-medium transition-all duration-300" data-filter="all">
+                        All Skills
+                    </button>
+                    <button class="filter-tab px-6 py-2 bg-secondary text-text-secondary rounded-lg font-medium transition-all duration-300 hover:bg-surface hover:text-text-primary" data-filter="programming">
+                        Programming
+                    </button>
+                    <button class="filter-tab px-6 py-2 bg-secondary text-text-secondary rounded-lg font-medium transition-all duration-300 hover:bg-surface hover:text-text-primary" data-filter="frameworks">
+                        Frameworks
+                    </button>
+                    <button class="filter-tab px-6 py-2 bg-secondary text-text-secondary rounded-lg font-medium transition-all duration-300 hover:bg-surface hover:text-text-primary" data-filter="tools">
+                        Tools
+                    </button>
+                    <button class="filter-tab px-6 py-2 bg-secondary text-text-secondary rounded-lg font-medium transition-all duration-300 hover:bg-surface hover:text-text-primary" data-filter="cloud">
+                        Cloud
+                    </button>
+                    <button class="filter-tab px-6 py-2 bg-secondary text-text-secondary rounded-lg font-medium transition-all duration-300 hover:bg-surface hover:text-text-primary" data-filter="soft">
+                        Soft Skills
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 skill-category" data-category="programming">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">💻 Programming Languages</h2>
+                <div class="text-text-secondary text-sm">Expert Level</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JavaScript Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-warning bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="JavaScript" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-text-primary">JavaScript</h3>
+                            <p class="text-sm text-text-secondary">ES6+ • Modern JS</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="flex items-center space-x-1 mb-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <span class="text-xs text-success">Expert</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Proficiency</span>
+                            <span class="text-success">95%</span>
+                        </div>
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <p class="text-sm text-text-secondary">5+ years experience</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Async/Await</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Promises</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">DOM Manipulation</span>
+                            </div>
+                            <p class="text-xs text-text-secondary">Used in 15+ projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-success bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Python" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-text-primary">Python</h3>
+                            <p class="text-sm text-text-secondary">Data Science • Backend</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="flex items-center space-x-1 mb-1">
+                                <span class="text-warning">★★★★☆</span>
+                            </div>
+                            <span class="text-xs text-success">Advanced</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Proficiency</span>
+                            <span class="text-success">88%</span>
+                        </div>
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <p class="text-sm text-text-secondary">3+ years experience</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Django</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Flask</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Pandas</span>
+                            </div>
+                            <p class="text-xs text-text-secondary">Used in 8+ projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TypeScript Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="TypeScript" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-text-primary">TypeScript</h3>
+                            <p class="text-sm text-text-secondary">Type Safety • Scalability</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="flex items-center space-x-1 mb-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                            <span class="text-xs text-success">Expert</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Proficiency</span>
+                            <span class="text-success">92%</span>
+                        </div>
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <p class="text-sm text-text-secondary">4+ years experience</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Interfaces</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Generics</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Decorators</span>
+                            </div>
+                            <p class="text-xs text-text-secondary">Used in 12+ projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks & Libraries Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 skill-category" data-category="frameworks">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">⚛️ Frameworks & Libraries</h2>
+                <div class="text-text-secondary text-sm">Modern Stack</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- React Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2940&auto=format&fit=crop" alt="React" class="w-10 h-10 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-1">React.js</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★★★</span>
+                        </div>
+                        <span class="text-xs text-success">Expert</span>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Hooks</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Context</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Redux</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">20+ projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next.js Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-success bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <img src="https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="Next.js" class="w-10 h-10 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-1">Next.js</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★★☆</span>
+                        </div>
+                        <span class="text-xs text-success">Advanced</span>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">SSR</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">API Routes</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">ISR</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">10+ projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node.js Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-warning bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Node.js" class="w-10 h-10 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-1">Node.js</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★★☆</span>
+                        </div>
+                        <span class="text-xs text-success">Advanced</span>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Express</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">APIs</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">NPM</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">15+ projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vue.js Skill Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-4">
+                        <div class="w-16 h-16 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop" alt="Vue.js" class="w-10 h-10 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-1">Vue.js</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★☆☆</span>
+                        </div>
+                        <span class="text-xs text-warning">Intermediate</span>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-warning h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Vuex</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Router</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">CLI</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">5+ projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Tools Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 skill-category" data-category="tools">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">🛠️ Development Tools</h2>
+                <div class="text-text-secondary text-sm">Productivity Suite</div>
+            </div>
+            
+            <div class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+                <!-- Git Tool Card -->
+                <div class="flex-none w-64 skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=2940&auto=format&fit=crop" alt="Git" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Git & GitHub</h3>
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Version Control</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Branching</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Merging</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VS Code Tool Card -->
+                <div class="flex-none w-64 skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-success bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="VS Code" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">VS Code</h3>
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 98%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Code Editor</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Extensions</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Debugging</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Snippets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Docker Tool Card -->
+                <div class="flex-none w-64 skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-warning bg-opacity-20 rounded-lg flex items-center justify-center">
+                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Docker" class="w-8 h-8 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Docker</h3>
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-warning h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Containerization</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Compose</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Images</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Volumes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Platforms Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 skill-category" data-category="cloud">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">☁️ Cloud Platforms</h2>
+                <div class="text-text-secondary text-sm">Scalable Infrastructure</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- AWS Cloud Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-warning bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop" alt="AWS" class="w-12 h-12 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-2">Amazon Web Services</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★★☆</span>
+                        </div>
+                        <span class="text-xs text-warning">Advanced</span>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-warning h-2 rounded-full" style="width: 82%"></div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">EC2</span>
+                                <span class="text-success">90%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">S3</span>
+                                <span class="text-success">95%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Lambda</span>
+                                <span class="text-warning">75%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">RDS</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">CloudFront</span>
+                                <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Route 53</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">Certified Solutions Architect</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Cloud Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-success bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <img src="https://images.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Google Cloud" class="w-12 h-12 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?q=80&w=2944&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-2">Google Cloud Platform</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★☆☆</span>
+                        </div>
+                        <span class="text-xs text-warning">Intermediate</span>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-success h-2 rounded-full" style="width: 68%"></div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Compute Engine</span>
+                                <span class="text-warning">70%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Cloud Storage</span>
+                                <span class="text-success">85%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Firebase</span>
+                                <span class="text-success">80%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">BigQuery</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Kubernetes</span>
+                                <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Cloud Run</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">Learning Path Active</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Azure Cloud Card -->
+                <div class="skill-card group bg-secondary rounded-lg p-6 hover:scale-105 transition-all duration-300 cursor-pointer border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Azure" class="w-12 h-12 object-cover rounded" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="font-semibold text-text-primary mb-2">Microsoft Azure</h3>
+                        <div class="flex justify-center items-center space-x-1 mb-2">
+                            <span class="text-warning">★★★☆☆</span>
+                        </div>
+                        <span class="text-xs text-warning">Intermediate</span>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="w-full bg-surface h-2 rounded-full">
+                            <div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">App Service</span>
+                                <span class="text-warning">75%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Blob Storage</span>
+                                <span class="text-warning">70%</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Functions</span>
+                                <span class="text-warning">60%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden group-hover:block space-y-2 pt-2 border-t border-surface">
+                            <div class="flex flex-wrap gap-1 justify-center">
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">DevOps</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">SQL Database</span>
+                                <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Active Directory</span>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center">Certification in Progress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 skill-category" data-category="soft">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">🤝 Soft Skills</h2>
+                <div class="text-text-secondary text-sm">Leadership & Communication</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Leadership Skill -->
+                <div class="skill-card bg-secondary rounded-lg p-6 text-center hover:scale-105 transition-all duration-300 border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="w-16 h-16 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Leadership</h3>
+                    <div class="flex justify-center items-center space-x-1 mb-3">
+                        <span class="text-warning">★★★★★</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full mb-3">
+                        <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                    </div>
+                    <p class="text-xs text-text-secondary">Led 5+ development teams</p>
+                </div>
+
+                <!-- Communication Skill -->
+                <div class="skill-card bg-secondary rounded-lg p-6 text-center hover:scale-105 transition-all duration-300 border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="w-16 h-16 bg-success bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Communication</h3>
+                    <div class="flex justify-center items-center space-x-1 mb-3">
+                        <span class="text-warning">★★★★★</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full mb-3">
+                        <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                    <p class="text-xs text-text-secondary">Client presentations & training</p>
+                </div>
+
+                <!-- Problem Solving Skill -->
+                <div class="skill-card bg-secondary rounded-lg p-6 text-center hover:scale-105 transition-all duration-300 border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="w-16 h-16 bg-warning bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Problem Solving</h3>
+                    <div class="flex justify-center items-center space-x-1 mb-3">
+                        <span class="text-warning">★★★★★</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full mb-3">
+                        <div class="bg-success h-2 rounded-full" style="width: 98%"></div>
+                    </div>
+                    <p class="text-xs text-text-secondary">Complex technical challenges</p>
+                </div>
+
+                <!-- Adaptability Skill -->
+                <div class="skill-card bg-secondary rounded-lg p-6 text-center hover:scale-105 transition-all duration-300 border border-opacity-10 border-white hover:border-primary hover:border-opacity-50">
+                    <div class="w-16 h-16 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Adaptability</h3>
+                    <div class="flex justify-center items-center space-x-1 mb-3">
+                        <span class="text-warning">★★★★☆</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full mb-3">
+                        <div class="bg-warning h-2 rounded-full" style="width: 88%"></div>
+                    </div>
+                    <p class="text-xs text-text-secondary">Quick technology adoption</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Recommendations Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">💡 Because You're Interested in React...</h2>
+                <a href="projects_showcase.html" class="text-text-secondary hover:text-primary transition-colors">View Projects</a>
+            </div>
+            
+            <div class="flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+                <!-- Recommended Skill 1 -->
+                <div class="flex-none w-80 bg-secondary rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    <div class="aspect-video relative">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop" alt="GraphQL" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white text-xs font-bold px-2 py-1 rounded">95% Match</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-2">GraphQL</h3>
+                        <p class="text-sm text-text-secondary mb-3">Perfect complement to React for efficient data fetching</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★</span>
+                                <span class="text-sm text-text-secondary">4.8 (React developers)</span>
+                            </div>
+                            <span class="text-xs bg-success bg-opacity-20 text-success px-2 py-1 rounded">Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Skill 2 -->
+                <div class="flex-none w-80 bg-secondary rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    <div class="aspect-video relative">
+                        <img src="https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="React Native" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white text-xs font-bold px-2 py-1 rounded">92% Match</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-2">React Native</h3>
+                        <p class="text-sm text-text-secondary mb-3">Extend React skills to mobile app development</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★</span>
+                                <span class="text-sm text-text-secondary">4.7 (Mobile devs)</span>
+                            </div>
+                            <span class="text-xs bg-warning bg-opacity-20 text-warning px-2 py-1 rounded">Next Goal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Skill 3 -->
+                <div class="flex-none w-80 bg-secondary rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+                    <div class="aspect-video relative">
+                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testing Library" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning text-black text-xs font-bold px-2 py-1 rounded">88% Match</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-text-primary mb-2">React Testing Library</h3>
+                        <p class="text-sm text-text-secondary mb-3">Essential for robust React application testing</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★</span>
+                                <span class="text-sm text-text-secondary">4.6 (QA focused)</span>
+                            </div>
+                            <span class="text-xs bg-primary bg-opacity-20 text-primary px-2 py-1 rounded">Improving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Endorsements Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">⭐ Peer Reviews</h2>
+                <div class="text-text-secondary text-sm">What colleagues say</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-secondary rounded-lg p-6 border border-opacity-10 border-white">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-semibold text-sm">SR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Sarah Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">Senior Frontend Developer</p>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "Chandan's React skills are exceptional. His component architecture is clean, 
+                        reusable, and follows best practices. Great mentor for junior developers."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-text-secondary">React.js • Leadership</span>
+                        <span class="text-xs text-success">Verified Colleague</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-secondary rounded-lg p-6 border border-opacity-10 border-white">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-success rounded-full flex items-center justify-center">
+                            <span class="text-white font-semibold text-sm">MK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Michael Kim</h4>
+                            <p class="text-sm text-text-secondary">DevOps Engineer</p>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "Worked with Chandan on cloud deployments. His understanding of AWS and 
+                        containerization made our CI/CD pipeline incredibly smooth."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-text-secondary">AWS • Docker • CI/CD</span>
+                        <span class="text-xs text-success">Verified Colleague</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-secondary rounded-lg p-6 border border-opacity-10 border-white">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-warning rounded-full flex items-center justify-center">
+                            <span class="text-black font-semibold text-sm">AP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Anita Patel</h4>
+                            <p class="text-sm text-text-secondary">Product Manager</p>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-warning">★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary text-sm mb-4">
+                        "Chandan translates complex requirements into elegant solutions. His 
+                        communication skills bridge the gap between technical and business teams perfectly."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-text-secondary">Communication • Problem Solving</span>
+                        <span class="text-xs text-success">Verified Colleague</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Progress Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold text-text-primary">📈 Learning Journey</h2>
+                <div class="text-text-secondary text-sm">Continuous Growth</div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Learning Timeline -->
+                <div class="bg-secondary rounded-lg p-6">
+                    <h3 class="font-semibold text-text-primary mb-6">Recent Learning Milestones</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-primary font-medium">AWS Solutions Architect</span>
+                                    <span class="text-xs text-success">Completed</span>
+                                </div>
+                                <p class="text-sm text-text-secondary">December 2024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-3 h-3 bg-warning rounded-full animate-pulse"></div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-primary font-medium">Kubernetes Certification</span>
+                                    <span class="text-xs text-warning">In Progress</span>
+                                </div>
+                                <p class="text-sm text-text-secondary">Expected: March 2025</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-3 h-3 bg-surface rounded-full"></div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-primary font-medium">Machine Learning Specialization</span>
+                                    <span class="text-xs text-text-secondary">Planned</span>
+                                </div>
+                                <p class="text-sm text-text-secondary">Starting: June 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Growth Chart -->
+                <div class="bg-secondary rounded-lg p-6">
+                    <h3 class="font-semibold text-text-primary mb-6">Skill Growth Trajectory</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-text-secondary">React.js</span>
+                                <span class="text-success">95% (+5% this year)</span>
+                            </div>
+                            <div class="w-full bg-surface h-2 rounded-full">
+                                <div class="bg-success h-2 rounded-full relative" style="width: 95%">
+                                    <div class="absolute right-0 top-0 w-1 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-text-secondary">Cloud Architecture</span>
+                                <span class="text-warning">82% (+15% this year)</span>
+                            </div>
+                            <div class="w-full bg-surface h-2 rounded-full">
+                                <div class="bg-warning h-2 rounded-full relative" style="width: 82%">
+                                    <div class="absolute right-0 top-0 w-3 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-text-secondary">DevOps</span>
+                                <span class="text-warning">75% (+20% this year)</span>
+                            </div>
+                            <div class="w-full bg-surface h-2 rounded-full">
+                                <div class="bg-warning h-2 rounded-full relative" style="width: 75%">
+                                    <div class="absolute right-0 top-0 w-4 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-text-secondary">Machine Learning</span>
+                                <span class="text-text-secondary">35% (New skill)</span>
+                            </div>
+                            <div class="w-full bg-surface h-2 rounded-full">
+                                <div class="bg-primary h-2 rounded-full animate-pulse" style="width: 35%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Skills List Sidebar (Fixed Position) -->
+    <div class="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
+        <div class="bg-secondary rounded-lg p-4 w-64 shadow-dramatic">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-text-primary">My Skills</h3>
+                <a href="resume_downloads.html" class="text-primary hover:text-primary-700 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-4-4m4 4l4-4m-4-4V3"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="space-y-3">
+                <div class="flex items-center justify-between p-2 hover:bg-surface hover:bg-opacity-50 rounded cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-success rounded-full"></div>
+                        <span class="text-sm text-text-primary">React.js</span>
+                    </div>
+                    <span class="text-xs text-success">95%</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-2 hover:bg-surface hover:bg-opacity-50 rounded cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-success rounded-full"></div>
+                        <span class="text-sm text-text-primary">JavaScript</span>
+                    </div>
+                    <span class="text-xs text-success">95%</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-2 hover:bg-surface hover:bg-opacity-50 rounded cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-success rounded-full"></div>
+                        <span class="text-sm text-text-primary">TypeScript</span>
+                    </div>
+                    <span class="text-xs text-success">92%</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-2 hover:bg-surface hover:bg-opacity-50 rounded cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-warning rounded-full"></div>
+                        <span class="text-sm text-text-primary">Python</span>
+                    </div>
+                    <span class="text-xs text-warning">88%</span>
+                </div>
+                
+                <div class="flex items-center justify-between p-2 hover:bg-surface hover:bg-opacity-50 rounded cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-warning rounded-full"></div>
+                        <span class="text-sm text-text-primary">AWS</span>
+                    </div>
+                    <span class="text-xs text-warning">82%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12 px-4 sm:px-6 lg:px-8 mt-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">ChandanFlix</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Your next favorite developer story. Binge-worthy technical skills, 
+                        compelling project narratives, and plot twists that solve real problems.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about_series.html" class="text-text-secondary hover:text-primary transition-colors">About Series</a></li>
+                        <li><a href="projects_showcase.html" class="text-text-secondary hover:text-primary transition-colors">Projects</a></li>
+                        <li><a href="skills_matrix.html" class="text-text-secondary hover:text-primary transition-colors">Skills Matrix</a></li>
+                        <li><a href="contact_studio.html" class="text-text-secondary hover:text-primary transition-colors">Contact Studio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="resume_downloads.html" class="text-text-secondary hover:text-primary transition-colors">Download Resume</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">GitHub Portfolio</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">LinkedIn Profile</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-primary transition-colors">Tech Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-surface mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 ChandanFlix. All rights reserved. Made with ❤️ and lots of ☕
+                </p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-text-secondary text-sm">Last updated: Dec 2024</span>
+                    <div class="flex items-center space-x-1">
+                        <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                        <span class="text-success text-sm">Available for hire</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Styles -->
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .filter-tab.active {
+            background-color: var(--color-primary);
+            color: white;
+        }
+    </style>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('skillSearch');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+        const skillCards = document.querySelectorAll('.skill-card');
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            
+            if (query.length > 0) {
+                searchSuggestions.classList.remove('hidden');
+                
+                // Filter skill cards
+                skillCards.forEach(card => {
+                    const skillName = card.querySelector('h3').textContent.toLowerCase();
+                    const skillTags = card.querySelectorAll('span');
+                    let hasMatch = skillName.includes(query);
+                    
+                    skillTags.forEach(tag => {
+                        if (tag.textContent.toLowerCase().includes(query)) {
+                            hasMatch = true;
+                        }
+                    });
+                    
+                    if (hasMatch) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            } else {
+                searchSuggestions.classList.add('hidden');
+                skillCards.forEach(card => {
+                    card.style.display = 'block';
+                });
+            }
+        });
+
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)) {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+
+        // Filter functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const skillCategories = document.querySelectorAll('.skill-category');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active tab
+                filterTabs.forEach(t => {
+                    t.classList.remove('active', 'bg-primary', 'text-white');
+                    t.classList.add('bg-secondary', 'text-text-secondary');
+                });
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-secondary', 'text-text-secondary');
+                
+                // Show/hide categories
+                if (filter === 'all') {
+                    skillCategories.forEach(category => {
+                        category.style.display = 'block';
+                    });
+                    skillCards.forEach(card => {
+                        card.style.display = 'block';
+                    });
+                } else {
+                    skillCategories.forEach(category => {
+                        if (category.getAttribute('data-category') === filter) {
+                            category.style.display = 'block';
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-opacity-100');
+            } else {
+                nav.classList.remove('bg-opacity-100');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Skill card interactions
+        skillCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Add click interaction for skill details
+                const skillName = this.querySelector('h3').textContent;
+                console.log(`Clicked on skill: ${skillName}`);
+                // You could open a modal or navigate to detailed skill page
+            });
+        });
+
+        // Search suggestions click handler
+        document.querySelectorAll('#searchSuggestions div').forEach(suggestion => {
+            suggestion.addEventListener('click', function() {
+                const skillName = this.textContent;
+                searchInput.value = skillName;
+                searchSuggestions.classList.add('hidden');
+                
+                // Trigger search
+                const event = new Event('input');
+                searchInput.dispatchEvent(event);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
